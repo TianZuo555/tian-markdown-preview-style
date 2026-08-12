@@ -7,7 +7,7 @@ A local VS Code extension that applies `markdown.css` globally to VS Code's buil
 After publication, install it with:
 
 ```sh
-code --install-extension tian.tian-markdown-preview-style
+code --install-extension TianZuo.tian-markdown-preview-style
 ```
 
 Reload VS Code after installing or updating the extension.
@@ -23,4 +23,4 @@ npx @vscode/vsce login <publisher-id>
 npx @vscode/vsce publish
 ```
 
-Before publishing, update the `publisher` value in `package.json` to your actual Marketplace publisher ID. The extension ID will be `<publisher-id>.tian-markdown-preview-style`.
+The Marketplace publisher ID is `TianZuo`. The extension ID is `TianZuo.tian-markdown-preview-style`.

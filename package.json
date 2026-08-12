@@ -3,8 +3,12 @@
     "displayName": "Tian Markdown Preview Style",
     "description": "Global custom CSS for VS Code's built-in Markdown preview.",
     "version": "1.0.0",
-    "publisher": "REPLACE_WITH_MARKETPLACE_PUBLISHER_ID",
+    "publisher": "TianZuo",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TianZuo555/tian-markdown-preview-style.git"
+    },
     "engines": {
         "vscode": ">=1.90.0"
     },
