@@ -1,6 +1,14 @@
 # Tian Markdown Preview Style
 
-A local VS Code extension that applies `markdown.css` globally to VS Code's built-in Markdown preview.
+A VS Code extension that applies `markdown.css` globally to VS Code's built-in Markdown preview and adds `==highlighted text==` syntax.
+
+Use double equals to highlight text:
+
+```markdown
+This is ==highlighted== text.
+```
+
+The preview renders it as a styled `<mark>` element.
 
 ## Install from the Marketplace
 
@@ -10,7 +18,7 @@ After publication, install it with:
 code --install-extension TianZuo.tian-markdown-preview-style
 ```
 
-Reload VS Code after installing or updating the extension.
+Reload VS Code after installing or updating the extension. Open a new Markdown preview after updating so the parser plugin is loaded.
 
 The stylesheet is contributed through `markdown.previewStyles`, so it works with the native Markdown preview and does not require `markdown.styles` in user settings.
 

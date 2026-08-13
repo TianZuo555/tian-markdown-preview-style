@@ -16,6 +16,8 @@
     --gh-danger-fg: #f47067;
     --gh-strong-fg: #e3b341;
     --gh-italic-fg: #dcbdfb;
+    --gh-mark-bg: #e3b341;
+    --gh-mark-fg: #22272e;
 }
 
 body {
@@ -67,6 +69,15 @@ body {
 .github-markdown-body strong,
 .github-markdown-body b {
     color: var(--gh-strong-fg);
+}
+
+body mark,
+.markdown-body mark,
+.github-markdown-body mark {
+    border-radius: 3px;
+    background-color: var(--gh-mark-bg);
+    color: var(--gh-mark-fg);
+    padding: 0.05em 0.2em;
 }
 
 .markdown-body h1,
