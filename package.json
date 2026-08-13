@@ -1,8 +1,8 @@
 {
     "name": "tian-markdown-preview-style",
     "displayName": "Tian Markdown Preview Style",
-    "description": "Global custom CSS for VS Code's built-in Markdown preview.",
-    "version": "1.1.0",
+    "description": "GitHub-styled Markdown preview with Vim-like scrolling motions for VS Code.",
+    "version": "1.2.0",
     "publisher": "TianZuo",
     "license": "MIT",
     "repository": {
@@ -23,7 +23,13 @@
         "markdown.previewStyles": [
             "./markdown.css"
         ],
-        "markdown.markdownItPlugins": true
+        "markdown.markdownItPlugins": true,
+        "markdown.previewScripts": [
+            "./vim-motions.js"
+        ]
+    },
+    "scripts": {
+        "test": "node --test"
     },
     "dependencies": {
         "markdown-it-mark": "^4.0.0"
