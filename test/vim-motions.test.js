@@ -114,6 +114,19 @@ test("ctrl-e, ctrl-y, ctrl-d, ctrl-u, ctrl-f, and ctrl-b use Vim motions", () =>
     assert.deepEqual(harness.calls.map(({ top }) => top), [25.6, -25.6, 400, -400, 720, -720]);
 });
 
+test("curly braces move by one preview block", () => {
+    const harness = createHarness();
+    const handler = createVimMotionHandler(harness.window, harness.document);
+
+    key(handler, "}");
+    key(handler, "{");
+
+    assert.deepEqual(harness.calls.map(({ type, top }) => ({ type, top })), [
+        { type: "by", top: 640 },
+        { type: "by", top: -640 },
+    ]);
+});
+
 test("interactive elements keep their browser behavior", () => {
     const harness = createHarness();
     const handler = createVimMotionHandler(harness.window, harness.document);

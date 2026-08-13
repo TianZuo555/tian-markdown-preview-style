@@ -34,6 +34,7 @@ When the Markdown preview has focus, these motions are supported:
 | `Ctrl-d` / `Ctrl-u` | Scroll down/up half a page |
 | `Ctrl-f` / `Ctrl-b` | Scroll down/up one page |
 | `gg` / `G` | Go to top/bottom |
+| `{` / `}` | Scroll up/down one block |
 | `zh` / `zl` | Scroll left/right one step |
 | `zH` / `zL` | Scroll left/right one page |
 | `zt` / `zz` / `zb` | Position at top/center/bottom |
@@ -53,8 +54,8 @@ npx @vscode/vsce publish
 The repository also includes `.github/workflows/publish.yml`. Add a `VSCE_PAT` repository secret, then push a version tag to run tests and publish automatically:
 
 ```sh
-git tag v1.2.0
-git push origin v1.2.0
+git tag v1.2.1
+ git push origin v1.2.1
 ```
 
 The Marketplace publisher ID is `TianZuo`. The extension ID is `TianZuo.tian-markdown-preview-style`.

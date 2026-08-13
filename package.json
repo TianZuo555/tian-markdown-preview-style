@@ -2,7 +2,7 @@
     "name": "tian-markdown-preview-style",
     "displayName": "Tian Markdown Preview Style",
     "description": "GitHub-styled Markdown preview with Vim-like scrolling motions for VS Code.",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "publisher": "TianZuo",
     "license": "MIT",
     "repository": {

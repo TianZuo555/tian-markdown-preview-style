@@ -93,6 +93,16 @@
         scrollTo(Math.max(0, (height - viewportHeight) / 2));
     }
 
+    function nextBlock() {
+        const viewportHeight = win.innerHeight || scrollElement.clientHeight || 0;
+        scrollBy(Math.max(1, viewportHeight * 0.8), 0);
+    }
+
+    function previousBlock() {
+        const viewportHeight = win.innerHeight || scrollElement.clientHeight || 0;
+        scrollBy(-Math.max(1, viewportHeight * 0.8), 0);
+    }
+
     function isInteractiveTarget(target) {
         for (let element = target; element && element !== doc; element = element.parentElement) {
             const tagName = String(element.tagName || '').toLowerCase();
@@ -137,6 +147,12 @@
                 return true;
             case 'M':
                 center();
+                return true;
+            case '}':
+                nextBlock();
+                return true;
+            case '{':
+                previousBlock();
                 return true;
             case 'L':
                 bottom();
